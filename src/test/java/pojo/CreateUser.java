@@ -1,9 +1,7 @@
 package pojo;
-
 import java.util.List;
 
 public class CreateUser {
-	
 	
 	private int page;
 	private int per_page;
@@ -12,7 +10,6 @@ public class CreateUser {
 	private Ad ad;
 	private List<Data> data;
 	
-	 
 	public int getPage() {
 		return page;
 	}
@@ -50,8 +47,5 @@ public class CreateUser {
 		this.data = mylist;
 	}
 	
-	
-	
-	
-
 }
+	

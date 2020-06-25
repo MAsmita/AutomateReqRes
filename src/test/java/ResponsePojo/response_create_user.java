@@ -1,18 +1,14 @@
-package pojo;
+package ResponsePojo;
 
-public class CreatePost {  
-    private String name;
+import java.util.Date;
+
+public class response_create_user {
+	private String name;
 	private String job;
 	private String email;
 	private int id;
-	
-	public int getId() {
-		return id;
-	}
-	public void setId(int id) {
-		this.id = id;
-	}
-	
+	private Date createdAt;
+
 	public String getName() {
 		return name;
 	}
@@ -31,7 +27,16 @@ public class CreatePost {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	
-	
-	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public Date getCreatedAt() {
+		return createdAt;
+	}
+	public void setCreatedAt(Date createdAt) {
+		this.createdAt = createdAt;
+	}
 }

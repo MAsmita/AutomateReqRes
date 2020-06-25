@@ -8,20 +8,17 @@ import io.restassured.specification.ResponseSpecification;
 
 public class Utility {
 
-	public static RequestSpecification requestbuild() 
-	 {
-		
-		RequestSpecification reqspec =new RequestSpecBuilder().setBaseUri("https://reqres.in")
+	public static RequestSpecification requestbuild() {
+
+		RequestSpecification reqspec = new RequestSpecBuilder().setBaseUri("https://reqres.in")
 				.addHeader("Content-Type", "application/json").build();
-		        return reqspec;
-	 }
-	
-    public static ResponseSpecification responsebuild()
-    {
-    	
-		ResponseSpecification resspec =new ResponseSpecBuilder().expectStatusCode(200).expectHeader("Content-Type", "application/json; charset=utf-8").build();
-    	          return resspec;
-    }
-    
-   
+		return reqspec;
+	}
+
+	public static ResponseSpecification responsebuild() {
+
+		ResponseSpecification resspec = new ResponseSpecBuilder().expectStatusCode(200)
+				.expectHeader("Content-Type", "application/json; charset=utf-8").build();
+		return resspec;
+	}
 }

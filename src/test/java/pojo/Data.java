@@ -8,8 +8,7 @@ public class Data {
 	private String last_name;
 	private String avatar;
 
-
-	public int getId() {
+    public int getId() {
 		return id;
 	}
 	public void setId(int id) {
