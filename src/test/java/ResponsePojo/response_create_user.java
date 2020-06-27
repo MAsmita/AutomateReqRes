@@ -2,7 +2,7 @@ package ResponsePojo;
 
 import java.util.Date;
 
-public class response_create_user {
+public class Response_create_user {
 	private String name;
 	private String job;
 	private String email;

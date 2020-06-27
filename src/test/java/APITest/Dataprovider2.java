@@ -19,14 +19,8 @@ public void user_registration(CreatePost2 createpost)
 @DataProvider(name = "registerdetails")
 public Object[][] getData() {
 		 return new Object[][] {
-			 {new CreatePost2().setName("michel")},
-			 {new CreatePost2().setJob("technician")},
-			 {new CreatePost2().setId(7)},
-			 {new CreatePost2().setName("sofia")},
-			 {new CreatePost2().setJob("teamleader")},
-			 {new CreatePost2().setId(8)},
-			 {new CreatePost2().setName("adam")},
-			 {new CreatePost2().setJob("supervisor")},
-			 {new CreatePost2().setId(9)}};
+			 {new CreatePost2("michel", "technician")},
+			 {new CreatePost2("michel2", "technician2")}
+			 };
   }
 }

@@ -30,12 +30,13 @@ public static void Update_job_info() {
 	CreatePost cp = new CreatePost();
     cp.setName("morpheus");
 	cp.setJob("zion resident");
-	cp.setEmail("morp.lead@reqres.in");
+	cp.setEmail("morp.zion@reqres.in");
 	cp.setId(7);
 	    	
 	response_update_job resp = given().spec(Utility.requestbuild()).queryParam("page","2")
 	.body(cp).when().put("/api/users/2").as(response_update_job.class);
 	
 	System.out.println("Updated Job: "+resp.getJob());
+	System.out.println("Updated Email: "+resp.getEmail());
   }	
 }

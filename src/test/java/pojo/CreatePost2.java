@@ -4,7 +4,12 @@ public class CreatePost2 {
 	private String name;
 	private String job;
 	private int id;
-		
+	
+	public CreatePost2(String name, String job) {
+		this.name = name;
+		this.job = job;
+	}
+	
 	public String getName() {
 		return name;
 	}

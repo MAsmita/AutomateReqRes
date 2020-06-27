@@ -2,7 +2,7 @@ package ResponsePojo;
 
 import java.util.Date;
 
-public class response_update_job {
+public class Response_update_job {
 	private String name;
 	private String job;
 	private String email;
