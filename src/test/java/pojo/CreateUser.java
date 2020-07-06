@@ -46,6 +46,5 @@ public class CreateUser {
 	public void setData(List<pojo.Data> mylist) {
 		this.data = mylist;
 	}
-	
 }
 	

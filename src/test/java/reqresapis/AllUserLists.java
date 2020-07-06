@@ -1,15 +1,17 @@
-package APITest;
+package reqresapis;
+
 import static io.restassured.RestAssured.given;
 import io.restassured.RestAssured;
 import io.restassured.parsing.Parser;
 import pojo.CreateUser;
 
-public class Deserialisation {
+public class AllUserLists {
 
 public static void main(String[] args) {
    
 	RestAssured.baseURI = "https://reqres.in";
-		CreateUser resp = given().queryParam("page", "2").expect().defaultParser(Parser.JSON)
+		CreateUser resp = given().queryParam("page", "2").expect()
+		.defaultParser(Parser.JSON)
 		.when().get("/api/users").as(CreateUser.class);
 
 		System.out.println(resp.getPage());

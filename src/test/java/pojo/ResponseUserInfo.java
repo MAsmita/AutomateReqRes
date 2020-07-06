@@ -1,8 +1,9 @@
-package ResponsePojo;
+package pojo;
 
 import java.util.Date;
 
-public class Response_create_user {
+public class ResponseUserInfo {
+    
 	private String name;
 	private String job;
 	private String email;

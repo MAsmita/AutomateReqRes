@@ -1,9 +1,7 @@
-package ResponsePojo;
+package pojo;
 
-import pojo.Ad;
-import pojo.Data;
-
-public class Response_single_user {
+public class ResponseSingleUser {
+    
 	private Data data;
 	private Ad ad;
 	

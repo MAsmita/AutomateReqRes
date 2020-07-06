@@ -1,19 +1,16 @@
 package pojo;
 
-public class CreatePost {  
-    private String name;
+import java.util.Date;
+
+public class ResponseUpdateJob {
+    
+	private String name;
 	private String job;
 	private String email;
 	private int id;
+	private Date updatedAt;
 	
-	public int getId() {
-		return id;
-	}
-	public void setId(int id) {
-		this.id = id;
-	}
-	
-	public String getName() {
+	 public String getName() {
 		return name;
 	}
 	public void setName(String name) {
@@ -31,7 +28,16 @@ public class CreatePost {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	
-	
-	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public Date getUpdatedAt() {
+		return updatedAt;
+	}
+	public void setUpdatedAt(Date updatedAt) {
+		this.updatedAt = updatedAt;
+	}
 }

@@ -1,11 +1,11 @@
 package pojo;
 
-public class CreatePost2 {  
+public class UserDetails {  
 	private String name;
 	private String job;
 	private int id;
 	
-	public CreatePost2(String name, String job) {
+	public UserDetails(String name, String job) {
 		this.name = name;
 		this.job = job;
 	}
